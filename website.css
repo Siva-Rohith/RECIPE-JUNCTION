@@ -1,0 +1,246 @@
+
+ body{
+     background-color: #ddd;
+     color:black;
+ }
+.product-grid {
+      display:flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding: 10px;
+      margin-left: 30px;
+
+}
+.product-item {
+  
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px; 
+}
+.product-item img {
+  width: 400px;
+  height:400px;
+}
+
+.recipename {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #333;
+}
+.tas{
+  text-align: center;
+}
+.navbar {
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 20px;
+}
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f54d1e;
+}
+
+.logo .dot {
+    color: #fbb03b;
+}
+.search-bar {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    max-width: 400px;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    font-size: 14px;
+}
+
+.search-bar button {
+    background-color: #f54d1e;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    font-size: 14px;
+}
+.account-link {
+    color: #f54d1e;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.account-link:hover {
+    text-decoration: underline;
+}
+.bottom-row {
+    display: flex;
+    justify-content: start;
+    gap: 50px;
+    font-size: 14px;
+    position: relative;
+    margin-top: 70px;
+    margin-left: 20px;
+}
+
+.bottom-row a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+
+.bottom-row a:hover {
+    text-decoration: underline;
+}
+.bottom-row a .tooltip {
+    visibility: hidden;
+    opacity: 0;
+    width: max-content;
+    background-color:black;
+    color:white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 12px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5px;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    white-space: nowrap;
+}
+
+.bottom-row a:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    border-top: 1px solid #e0e0e0;
+  }
+  .footer-left {
+    max-width: 300px;
+  }
+
+  .footer-left img {
+    width: 150px;
+  }
+
+  .footer-left h3 {
+    margin-top: 10px;
+    color: #333;
+    font-size: 18px;
+  }
+
+  .footer-left p {
+    margin: 10px 0;
+    color: #666;
+    font-size: 14px;
+  }
+
+  .footer-left input[type="email"] {
+    padding: 10px;
+    width: calc(100% - 120px);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 14px;
+  }
+
+  .footer-left button {
+    padding: 10px 15px;
+    background-color: #006d66;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .footer-center {
+    display: flex;
+    gap: 30px;
+  }
+
+  .footer-center div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-center h4 {
+    color: #006d66;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .footer-center a {
+    color: #666;
+    text-decoration: none;
+    margin: 5px 0;
+    font-size: 14px;
+  }
+
+  .footer-center a:hover {
+    color: #333;
+  }
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-social {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+  }
+
+  .footer-social a {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b64924;
+    color: white;
+    border-radius: 50%;
+    font-size: 18px;
+    text-decoration: none;
+  }
+
+  .footer-social a:hover {
+    background-color: #d2562f;
+  }
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #aaa;
+}
+.recipename{
+  text-decoration: none;
+}
+.price{
+  text-decoration: none;
+  color: black;
+}
+.rating{
+  color: black;
+}

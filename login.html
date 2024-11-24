@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Recipe Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+  }
+  
+  body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f9f4ef;
+  }
+  
+  .login-container {
+      width: 100%;
+      max-width: 400px;
+      padding: 20px;
+      background: #ffffff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      text-align: center;
+  }
+  
+  h2 {
+      color: #4a4a4a;
+      margin-bottom: 10px;
+  }
+  
+  p {
+      color: #7a7a7a;
+      margin-bottom: 20px;
+  }
+  
+  .login-form label {
+      display: block;
+      text-align: left;
+      margin-bottom: 5px;
+      color: #4a4a4a;
+  }
+  
+  .login-form input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+  }
+  
+  button {
+      width: 100%;
+      padding: 10px;
+      background-color: #f08a5d;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+  }
+  
+  button:hover {
+      background-color: #d87355;
+  }
+  
+  .register-link {
+      margin-top: 10px;
+      font-size: 14px;
+  }
+  
+  .register-link a {
+      color: #f08a5d;
+      text-decoration: none;
+  }
+  
+  .register-link a:hover {
+      text-decoration: underline;
+  }
+  </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Welcome Back!</h2>
+        <p>Log in to access delicious recipes and more.</p>
+        <form class="login-form" action="dashboard.html" method="POST">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button onclick="window.location.href='index.html';">Login</button>
+            <p class="register-link">Don't have an account? <a href="signup.html">Register here</a></p>
+            
+        </form>
+    </div>
+</body>
+</html>
